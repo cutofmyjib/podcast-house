@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  background-color: #ED076F;
+}
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border-top: 5px solid #ED076F;
+  border-bottom: 1px solid #BBBBBB;
+}
+
+#site-name {
+  background-color: black;
+  padding: 15px;
+  font-family: 'Arvo', serif;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 28px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+nav a {
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0 0 0 20px;
+  padding: 25px 10px 10px 10px;
+
+}
+
+nav a:hover {
+  color: white;
+  background-color: black;
+  height: 34px;
+}
+
+#featured {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F0F0F0;
+}
+
+#featured img {
+  width: 40%;
+  height: 40%;
+}
+
+#featured-content {
+  padding-left: 20px;
+  width: 60%;
+}
+
+#featured-duration {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+}
+
+#featured-title {
+  font-family: 'Radley', serif;
+  font-size: 42px;
+  margin: 0;
+}
+
+#featured-desc {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#featured-button {
+  background-color: #7858F5;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  width: 150px;
+  margin: auto;
+  border: 0;
+  padding: 10px;
+}
+
+#featured-button:hover {
+  background-color: #D0CEF7;
+}
+
+.playlists {
+  background-color: #E0E9FF;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  background-image: url("http://www.themesltd.com/backgrounds/random/purple_and_pink_zags.png");
+}
+
+.playlist {
+  width: 40%;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 1px #BBBBBB;
+}
+
+.playlist-content {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.playlist-title {
+  font-family: 'Radley', serif;
+  font-size: 32px;
+  margin: 0;
+}
+
+.playlist-duration {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+}
+
+.playlist img {
+  width: 100%;
+}
+
+footer {
+  margin: 20px;
+}
+
+.follow {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.follow a {
+  padding: 15px;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+}
+
+.follow a:hover {
+  color: #ED076F;
+  background-color: #D0CEF7;
+}
