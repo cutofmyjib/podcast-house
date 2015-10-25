@@ -29,6 +29,7 @@ nav {
 }
 
 nav a {
+  cursor: pointer;
   font-family: 'Arvo', serif;
   font-weight: 400;
   font-size: 14px;
@@ -134,7 +135,28 @@ nav a:hover {
 }
 
 footer {
+  font-family: 'Arvo', serif;
+  color: white;
   margin: 20px;
+  font-size: 14px;
+}
+
+footer p {
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+}
+
+footer p a {
+  color: white;
+  text-decoration: none;
+  color: #D0CEF7;
+}
+
+footer a:hover {
+  cursor: pointer;
+  color: white;
 }
 
 .follow {
@@ -145,13 +167,10 @@ footer {
 
 .follow a {
   padding: 15px;
-  font-family: 'Arvo', serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: white;
 }
 
 .follow a:hover {
+  cursor: pointer;
   color: #ED076F;
   background-color: #D0CEF7;
 }
