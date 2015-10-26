@@ -22,6 +22,12 @@ header {
   font-size: 28px;
 }
 
+#site-name a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
 nav {
   display: flex;
   flex-wrap: nowrap;
@@ -29,7 +35,9 @@ nav {
 }
 
 nav a {
+  color: black;
   cursor: pointer;
+  text-decoration: none;
   font-family: 'Arvo', serif;
   font-weight: 400;
   font-size: 14px;
