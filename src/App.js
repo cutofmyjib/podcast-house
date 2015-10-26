@@ -1,20 +1,31 @@
 import React, { Component } from 'react';
 
-class SiteName extends Component {
+class Header extends Component {
   render() {
     return (
-      <div id="site-name">
-        <a href="#">{this.props.name}</a>
-      </div>
+      <header>
+        <div id="site-name">
+          <a href="#">{this.props.name}</a>
+        </div>
+        <nav>
+          <a href="#">{this.props.about}</a>
+          <a href="#">{this.props.contact}</a>
+          <a href="#">{this.props.subscription}</a>
+        </nav>
+      </header>
     );
   }
 }
+
 
 export class App extends Component {
   render() {
     return (
       <div>
-        <SiteName name="podcast house" />
+        <Header name="podcast house"
+                about="about"
+                contact="contact us"
+                subscription="my subscription" />
       </div>
     );
   }
