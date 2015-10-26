@@ -17,6 +17,15 @@ class Header extends Component {
   }
 }
 
+class Featured extends Component {
+  render() {
+    return (
+      <section id="featured">
+
+      </section>
+    );
+  }
+}
 
 export class App extends Component {
   render() {
@@ -26,7 +35,9 @@ export class App extends Component {
                 about="about"
                 contact="contact us"
                 subscription="my subscription" />
+        <Featured />
       </div>
     );
   }
 }
+
