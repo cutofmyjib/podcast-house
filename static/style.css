@@ -175,6 +175,8 @@ footer a:hover {
 
 .follow a {
   padding: 15px;
+  text-decoration: none;
+  color: white;
 }
 
 .follow a:hover {
