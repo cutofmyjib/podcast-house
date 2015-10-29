@@ -35,8 +35,14 @@ class Featured extends Component {
 
 class PlaylistContainer extends Component {
   render() {
+    // const podcastPlaylists = this.props.data.map(function(data){
+    //   return <Playlist {...data} />
+    // })
+    const podcastPlaylists = this.props.data.map(data =>
+      <Playlist {...data} />)
     return (
       <div className="playlists">
+        {podcastPlaylists}
       </div>
     );
   }
@@ -66,12 +72,22 @@ export class App extends Component {
       desc: "Austin viral whatever, mlkshk Odd Future 3 wolf moon squid aesthetic ugh beard butcher. Crucifix master cleanse viral jean shorts Banksy PBR selfies. Dreamcatcher scenester pickled chambray kitsch. Next level distillery you probably haven't heard of them tattooed. IPhone tofu occupy next level.",
       button: "Check it out"
     };
-    const playlistProps = {
+    const playlistProps = [{
       img: "http://i3.kym-cdn.com/photos/images/original/000/581/251/5af.jpg",
       duration: "1h 24m",
       title: "Podcast Playlist Title",
       description: "Rub face on owner shove bum in owner's face like camera lens. Why must they do that. Sits on keyboard, spit up on light gray carpet instead of adjacent linoleum destroy couch as revenge for chew iPad power cord chew iPad power cord chase dog then run away. Hide from vacuum cleaner chew on cable, and intently sniff hand, or see owner, run in terror, chase dog then run away for cough furball but hiss at vacuum cleaner."
-    }
+    }, {
+      img: "http://img.ifcdn.com/images/5aa617f17978baf23e992f1e86c038627c11d9a6300fabc7b939d09508a273e0_1.jpg",
+      duration: "1h 24m",
+      title: "Podcast Playlist Title",
+      description: "Rub face on owner shove bum in owner's face like camera lens run in terror, chase dog then run away for cough furball but hiss at vacuum cleaner."
+    }, {
+      img: "http://i0.kym-cdn.com/photos/images/facebook/000/733/489/6c3.jpg",
+      duration: "1h 24m",
+      title: "Podcast Playlist Title",
+      description: "Rub face on owner shove bum in owner's face like camera lens. Why must they do that. Hide from vacuum cleaner chew on cable, and intently sniff hand, or see owner, run in terror, chase dog then run away for cough furball but hiss at vacuum cleaner."
+    }]
     return (
       <div>
         <Header name="podcast house"
@@ -79,8 +95,7 @@ export class App extends Component {
                 contact="contact us"
                 subscription="my subscription" />
         <Featured {...featuredProps} />
-        <PlaylistContainer />
-        <Playlist {...playlistProps} />
+        <PlaylistContainer data={playlistProps} />
       </div>
     );
   }
