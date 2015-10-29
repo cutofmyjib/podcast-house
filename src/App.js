@@ -18,6 +18,9 @@ class Header extends Component {
 }
 
 class Featured extends Component {
+  handleClick() {
+    alert("clicked");
+  }
   render() {
     return (
       <section id="featured">
@@ -26,7 +29,7 @@ class Featured extends Component {
           <p id="featured-duration">{this.props.duration}</p>
           <h1 id="featured-title">{this.props.title}</h1>
           <p id="featured-desc">{this.props.desc}</p>
-          <button id="featured-button">{this.props.button}</button>
+          <button id="featured-button" onClick={this.handleClick}>{this.props.button}</button>
         </div>
       </section>
     );
