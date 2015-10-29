@@ -80,6 +80,12 @@ class Footer extends Component {
 
 export class App extends Component {
   render() {
+    const headerProps = {
+      name: "podcast house",
+      about: "about",
+      contact: "contact us",
+      subscription: "my subscription"
+    };
     const featuredProps = {
       img: "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg",
       duration: "1h 30m",
@@ -113,10 +119,7 @@ export class App extends Component {
 
     return (
       <div>
-        <Header name="podcast house"
-                about="about"
-                contact="contact us"
-                subscription="my subscription" />
+        <Header {...headerProps} />
         <Featured {...featuredProps} />
         <PlaylistContainer data={playlistProps} />
         <Footer {...footerProps} />
