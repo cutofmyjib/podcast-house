@@ -35,8 +35,10 @@ class Featured extends Component {
 
 class PlaylistContainer extends Component {
   render() {
+    const playlists = this.props.data.map(data => <Playlist {...data} />)
     return (
       <div className="playlists">
+        {playlists}
       </div>
     );
   }
@@ -72,6 +74,7 @@ export class App extends Component {
       title: "Podcast Playlist Title",
       description: "Rub face on owner shove bum in owner's face like camera lens. Why must they do that. Sits on keyboard, spit up on light gray carpet instead of adjacent linoleum destroy couch as revenge for chew iPad power cord chew iPad power cord chase dog then run away. Hide from vacuum cleaner chew on cable, and intently sniff hand, or see owner, run in terror, chase dog then run away for cough furball but hiss at vacuum cleaner."
     }
+    const playlistsData = [ playlistProps, playlistProps ]
     return (
       <div>
         <Header name="podcast house"
@@ -79,8 +82,7 @@ export class App extends Component {
                 contact="contact us"
                 subscription="my subscription" />
         <Featured {...featuredProps} />
-        <PlaylistContainer />
-        <Playlist {...playlistProps} />
+        <PlaylistContainer data={playlistsData} />
       </div>
     );
   }
