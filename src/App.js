@@ -63,6 +63,21 @@ class Playlist extends Component {
   }
 }
 
+class Footer extends Component {
+  render() {
+    return (
+      <footer>
+        <div className="follow">
+          <a href="#">{this.props.twitter}</a>
+          <a href="#">{this.props.instagram}</a>
+          <a href="#">{this.props.facebook}</a>
+        </div>
+        <p><a href={this.props.madebyhref}>{this.props.madeby}</a></p>
+      </footer>
+    );
+  }
+}
+
 export class App extends Component {
   render() {
     const featuredProps = {
@@ -87,7 +102,15 @@ export class App extends Component {
       duration: "1h 24m",
       title: "Podcast Playlist Title",
       description: "Rub face on owner shove bum in owner's face like camera lens. Why must they do that. Hide from vacuum cleaner chew on cable, and intently sniff hand, or see owner, run in terror, chase dog then run away for cough furball but hiss at vacuum cleaner."
-    }]
+    }];
+    const footerProps = {
+      twitter: "twitter",
+      instagram: "instagram",
+      facebook: "facebook",
+      madeby: "made with ♥ by cutofmyjib",
+      madebyhref: "http://cutofmyjib.github.io"
+    }
+
     return (
       <div>
         <Header name="podcast house"
@@ -96,6 +119,7 @@ export class App extends Component {
                 subscription="my subscription" />
         <Featured {...featuredProps} />
         <PlaylistContainer data={playlistProps} />
+        <Footer {...footerProps} />
       </div>
     );
   }
