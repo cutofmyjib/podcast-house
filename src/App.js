@@ -34,7 +34,14 @@ class Featured extends Component {
 }
 
 class Playlist extends Component {
-  render
+  render() {
+    var playlistProps = {}
+  }
+
+  return (
+    <div class="playlist">
+    </div>
+  )
 }
 
 export class App extends Component {
