@@ -1,85 +1,9 @@
 import React, { Component } from 'react';
-
-class Header extends Component {
-  render() {
-    return (
-      <header>
-        <div id="site-name">
-          <a href="#">{this.props.name}</a>
-        </div>
-        <nav>
-          <a href="#">{this.props.about}</a>
-          <a href="#">{this.props.contact}</a>
-          <a href="#">{this.props.subscription}</a>
-        </nav>
-      </header>
-    );
-  }
-}
-
-class Featured extends Component {
-  handleClick() {
-    alert("clicked");
-  }
-  render() {
-    return (
-      <section id="featured">
-        <img src={this.props.img} />
-        <div id="featured-content">
-          <p id="featured-duration">{this.props.duration}</p>
-          <h1 id="featured-title">{this.props.title}</h1>
-          <p id="featured-desc">{this.props.desc}</p>
-          <button id="featured-button" onClick={this.handleClick}>{this.props.button}</button>
-        </div>
-      </section>
-    );
-  }
-}
-
-class PlaylistContainer extends Component {
-  render() {
-    // const podcastPlaylists = this.props.data.map(function(data){
-    //   return <Playlist {...data} />
-    // })
-    const podcastPlaylists = this.props.data.map(data =>
-      <Playlist {...data} />)
-    return (
-      <div className="playlists">
-        {podcastPlaylists}
-      </div>
-    );
-  }
-}
-
-class Playlist extends Component {
-  render() {
-    return (
-      <div className="playlist">
-        <img src={this.props.img} />
-        <div className="playlist-content">
-          <p className="playlist-duration">{this.props.duration}</p>
-          <h1 className="playlist-title">{this.props.title}</h1>
-          <p className="playlist-desc">{this.props.description}</p>
-        </div>
-      </div>
-    );
-  }
-}
-
-class Footer extends Component {
-  render() {
-    return (
-      <footer>
-        <div className="follow">
-          <a href="#">{this.props.twitter}</a>
-          <a href="#">{this.props.instagram}</a>
-          <a href="#">{this.props.facebook}</a>
-        </div>
-        <p><a href={this.props.madebyhref}>{this.props.madeby}</a></p>
-      </footer>
-    );
-  }
-}
+import { Header } from './header';
+import { Featured } from './featured';
+import { PlaylistContainer } from './playlist-container';
+import { Playlist } from './playlists';
+import { Footer } from './footer';
 
 export class App extends Component {
   render() {
