@@ -1,22 +1,8 @@
 import React, { Component } from 'react';
-import { Playlist } from './playlists';
 import { Header } from './header';
 import { Featured } from './featured';
-
-class PlaylistContainer extends Component {
-  render() {
-    // const podcastPlaylists = this.props.data.map(function(data){
-    //   return <Playlist {...data} />
-    // })
-    const podcastPlaylists = this.props.data.map(data =>
-      <Playlist {...data} />)
-    return (
-      <div className="playlists">
-        {podcastPlaylists}
-      </div>
-    );
-  }
-}
+import { PlaylistContainer } from './playlist-container';
+import { Playlist } from './playlists';
 
 class Footer extends Component {
   render() {
