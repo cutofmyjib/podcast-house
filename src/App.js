@@ -1,41 +1,7 @@
 import React, { Component } from 'react';
 import { Playlist } from './playlists';
-
-class Header extends Component {
-  render() {
-    return (
-      <header>
-        <div id="site-name">
-          <a href="#">{this.props.name}</a>
-        </div>
-        <nav>
-          <a href="#">{this.props.about}</a>
-          <a href="#">{this.props.contact}</a>
-          <a href="#">{this.props.subscription}</a>
-        </nav>
-      </header>
-    );
-  }
-}
-
-class Featured extends Component {
-  handleClick() {
-    alert("clicked");
-  }
-  render() {
-    return (
-      <section id="featured">
-        <img src={this.props.img} />
-        <div id="featured-content">
-          <p id="featured-duration">{this.props.duration}</p>
-          <h1 id="featured-title">{this.props.title}</h1>
-          <p id="featured-desc">{this.props.desc}</p>
-          <button id="featured-button" onClick={this.handleClick}>{this.props.button}</button>
-        </div>
-      </section>
-    );
-  }
-}
+import { Header } from './header';
+import { Featured } from './featured';
 
 class PlaylistContainer extends Component {
   render() {
