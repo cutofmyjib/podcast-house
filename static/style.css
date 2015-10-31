@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #ED076F;
+  background-color: #058ED9;
 }
 header {
   background-color: white;
@@ -8,7 +8,7 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
-  border-top: 5px solid #ED076F;
+  border-top: 5px solid #058ED9;
   border-bottom: 1px solid #BBBBBB;
 }
 
@@ -89,7 +89,7 @@ nav a:hover {
 }
 
 #featured-button {
-  background-color: #7858F5;
+  background-color: #FF8A5B;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -101,7 +101,8 @@ nav a:hover {
 }
 
 #featured-button:hover {
-  background-color: #D0CEF7;
+  background-color: #FBD1A2;
+  color: #058ED9;
 }
 
 .playlists {
@@ -159,7 +160,7 @@ footer p {
 footer p a {
   color: white;
   text-decoration: none;
-  color: #D0CEF7;
+  color: #FBD1A2;
 }
 
 footer a:hover {
@@ -181,6 +182,6 @@ footer a:hover {
 
 .follow a:hover {
   cursor: pointer;
-  color: #ED076F;
-  background-color: #D0CEF7;
+  color: #058ED9;
+  background-color: #FBD1A2;
 }
