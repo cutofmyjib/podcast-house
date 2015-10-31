@@ -7,7 +7,7 @@ import FeaturedArticle from './featured-article';
 
 let routes = (
   <Route name='app' path='/' handler={App} >
-    <Route name='home' path='/home' handler={Home} />
+    <Route name='home' path='/' handler={Home} />
     <Route name='featured' path='/featured' handler={FeaturedArticle} />
   </Route>
 );
