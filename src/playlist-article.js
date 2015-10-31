@@ -3,7 +3,13 @@ import React, { Component } from 'react';
 export default class PlaylistArticle extends Component {
   render() {
     return (
-      <div><h1>PLAYLIST ARTICLE HERE</h1></div>
+      <section className="podcast-playlist">
+        <div className="playlist-tracks">
+          <h1>FEATURED CONTENT HERE</h1>
+          <audio controls></audio>
+          <div className="share"></div>
+        </div>
+      </section>
     );
   }
 }
