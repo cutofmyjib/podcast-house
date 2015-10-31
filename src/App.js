@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import Router from 'react-router';
+import { RouteHandler } from 'react-router';
 import Header from './header';
 import Featured from './featured';
 import PlaylistContainer from './playlist-container';
 import Playlist from './playlists';
 import Footer from './footer';
+import routes from './routes';
 
-export class App extends Component {
+export default class App extends Component {
   render() {
     const headerProps = {
       name: "podcast house",
@@ -47,6 +50,7 @@ export class App extends Component {
     return (
       <div>
         <Header {...headerProps} />
+        <RouteHandler />
         <Featured {...featuredProps} />
         <PlaylistContainer data={playlistProps} />
         <Footer {...footerProps} />
@@ -54,6 +58,7 @@ export class App extends Component {
     );
   }
 }
+
 
 
 
