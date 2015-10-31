@@ -9,7 +9,7 @@ export default class Footer extends Component {
           <a href="#">{this.props.instagram}</a>
           <a href="#">{this.props.facebook}</a>
         </div>
-        <p><a href={this.props.madebyhref}>{this.props.madeby}</a></p>
+        <p><a href={this.props.madebyhref} target="_blank">{this.props.madeby}</a></p>
       </footer>
     );
   }
