@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
+import Home from './home';
 
 export default class Header extends Component {
   render() {
     return (
       <header>
         <div id="site-name">
-          <a href="#">{this.props.name}</a>
+          <Link to='home'>{this.props.name}</Link>
         </div>
         <nav>
           <a href="#">{this.props.about}</a>
