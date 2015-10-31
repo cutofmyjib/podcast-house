@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import Playlist from './playlists'
 
-class PlaylistContainer extends Component {
+export default class PlaylistContainer extends Component {
   render() {
     // const podcastPlaylists = this.props.data.map(function(data){
     //   return <Playlist {...data} />

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Featured extends Component {
+export default class Featured extends Component {
   handleClick() {
     alert("clicked");
   }
