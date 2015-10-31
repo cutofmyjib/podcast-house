@@ -115,16 +115,24 @@ nav a:hover {
 
 .playlist {
   width: 40%;
-  padding: 10px;
+  /*padding: 10px;*/
   margin: 10px;
   background-color: white;
   box-shadow: 1px 1px 1px #BBBBBB;
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  border: 10px solid white;
 }
 
 .playlist-content {
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
   padding: 0 20px;
+}
+
+.playlist:hover{
+  border: 10px solid #058ED9;
 }
 
 .playlist-title {
