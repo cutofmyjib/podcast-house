@@ -2,6 +2,7 @@ Podcast House
 =====================
 
 Podcast House is podcast playlist project using React.
+![](podcast-house-landingpage.jpg)
 
 ## Demo
 
