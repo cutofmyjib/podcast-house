@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Router from 'react-router';
-import { Link, RouteHandler } from 'react-router';
+import { Link } from 'react-router';
 
 export default class Featured extends Component {
   render() {
