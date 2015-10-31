@@ -11,7 +11,7 @@ export default class Featured extends Component {
           <p id="featured-duration">{this.props.duration}</p>
           <h1 id="featured-title">{this.props.title}</h1>
           <p id="featured-desc">{this.props.desc}</p>
-          <Link to='featured'><button id="featured-button">{this.props.button}</button></Link>
+          <Link to='playlist'><button id="featured-button">{this.props.button}</button></Link>
         </div>
       </section>
     );
