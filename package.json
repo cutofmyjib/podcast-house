@@ -51,6 +51,7 @@
   "dependencies": {
     "css-loader": "^0.21.0",
     "react": "^0.13.0",
+    "react-router": "^0.13.4",
     "style-loader": "^0.13.0"
   }
 }

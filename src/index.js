@@ -1,5 +1,8 @@
 import React from 'react';
-import { App } from './App';
+import Router from 'react-router';
 import '../static/style.css';
+import routes from './routes';
 
-React.render(<App />, document.getElementById('root'));
+Router.run(routes, Router.HistoryLocation, (Handler) => {
+  React.render(<Handler />, document.getElementById('root'));
+});
