@@ -1,0 +1,33 @@
+.podlist {
+  background: url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/E7CD4AAEF3.jpg') no-repeat;
+  background-size: cover;
+  height: 450px;
+}
+
+.background-tamer {
+    position: absolute;
+    background-color: black;
+    opacity: 0.65;
+    width: 100%;
+    height: 450px;
+}
+
+.podlist-content {
+  position: absolute;
+  z-index: 1;
+  color: white;
+}
+
+.podlist-title {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: inline-block;
+    color: white;
+}
+
+.share-icons {
+  display: flex;
+  list-style: none;
+  background-color: #F0F0F0;
+}
