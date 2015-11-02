@@ -11,8 +11,7 @@ export default class PlaylistArticle extends Component {
             <h1 className="podlist-title">Featured Content Here</h1>
             <audio controls></audio>
           </div>
-          <div className="inline">
-          </div>
+        </div>
           <div className="share-playlist">
             <ul className="share-icons">
               <li><a href="#"><img src="/static/twitter-icon.png" /></a></li>
@@ -21,7 +20,6 @@ export default class PlaylistArticle extends Component {
               <li><a href="#"><img src="/static/email-icon.png" /></a></li>
             </ul>
           </div>
-        </div>
       </div>
     );
   }
