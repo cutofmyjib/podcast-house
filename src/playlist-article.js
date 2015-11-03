@@ -29,7 +29,8 @@ export default class PlaylistArticle extends Component {
         </div>
         <div className="playlist-tracks">
           <ol>
-            <li></li>
+            <li>Title of track</li>
+            <p>duration</p>
             <li></li>
             <li></li>
             <li></li>
