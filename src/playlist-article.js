@@ -10,6 +10,8 @@ export default class PlaylistArticle extends Component {
           <div className="podlist-content-containter">
             <div className="podlist-content">
               <h1 className="podlist-title">Featured Content Here</h1>
+              <h4>1hr 40m</h4>
+              <h4>7 talks</h4>
               <div className="audio"><audio controls></audio></div>
             </div>
           </div>
