@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 
 export default class PlaylistArticle extends Component {
   render() {
+    var podlistStyle= { backgroundImage: 'url(https://snap-photos.s3.amazonaws.com/img-thumbs/960w/E7CD4AAEF3.jpg)',
+                        backgroundSize: 'cover' }
+
     return (
       <div>
-        <div className="podlist">
+        <div className="podlist" style={podlistStyle}>
           <div className="background-tamer">
           </div>
           <div className="podlist-content-containter">
