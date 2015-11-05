@@ -1,0 +1,16 @@
+.about-container {
+  padding: 20px;
+  background-color: #F0F0F0;
+}
+
+.about-title {
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.about-desc {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
