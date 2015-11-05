@@ -5,14 +5,11 @@ export default class About extends Component {
   render() {
     return (
       <div>
-        <section className="mini-nav">
-          <ul>
-            <Link to='about'><li>About</li></Link>
-            <li>Contact</li>
-          </ul>
-        </section>
+        <div className="about-container">
+          <h1 className="about-title">ABOUT THIS PROJECT</h1>
+          <p className="about-desc">As a big fan of podcasts, podcast house's mission is to make it easier for our fellow podcast listeners to pick a playlist to listen to especially when you're on the go!</p>
+        </div>
       </div>
     );
   }
 }
-
