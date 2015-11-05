@@ -50,13 +50,13 @@
 
 .share-playlist {
   padding: 10px 0 10px 0;
-  background-color: #F0F0F0;
+  background-color: #C1C1C1;
+  border-bottom: 1px solid #BBBBBB;
 }
 
 .share-icons {
   margin: 0;
   padding-left: 15px;
-
 }
 
 .share-icons > li {
@@ -64,11 +64,15 @@
   padding-right: 20px;
 }
 
+.share-icons li img {
+  height: 45px;
+}
+
 .playlist-tracks {
   margin: 0;
   padding: 10px;
   position: relative;
-  background-color: #F0F0F0;
+  background-color: white;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 18px;
