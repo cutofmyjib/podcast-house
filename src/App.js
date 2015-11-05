@@ -3,6 +3,7 @@ import Router from 'react-router';
 import { RouteHandler } from 'react-router';
 import Header from './header';
 import Home from './home';
+import About from './about';
 import Playlist from './playlists';
 import Footer from './footer';
 import routes from './routes';

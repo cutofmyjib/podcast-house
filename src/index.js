@@ -2,6 +2,7 @@ import React from 'react';
 import Router from 'react-router';
 import '../static/style.css';
 import '../static/style-playlist-article.css';
+import '../static/style-about.css';
 import '../static/twitter-icon.png';
 import '../static/facebook-icon.png';
 import '../static/linkedin-icon.png';
