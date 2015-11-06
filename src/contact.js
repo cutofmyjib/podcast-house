@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 export default class Contact extends Component {
-  propTypes: {
-    value: React.PropTypes.object.isRequired,
-    onChange: React.PropTypes.func.isRequired
-  }
-
   render() {
     return (
       <form className="contact">
-        <input type="text" placeholder="Name (required)" value={this.props.value.name} />
-        <input type="email" placeholder="Email" value={this.props.value.email} />
-        <textarea placeholder="Message" value={this.props.value.message} />
-        <button type="submit">Send</button>
+        <fieldset>
+          <label htmlFor='name'>Name
+            <input type="text" id='name' name='name' />
+          </label>
+
+          <label htmlFor='email'>Email
+            <input type="email" id='email' name='email' />
+          </label>
+
+          <label htmlFor='message'>Message
+            <textarea id='message' name='message'/>
+          </label>
+
+          <button type="submit">Send</button>
+        </fieldset>
       </form>
-    )
+    );
   }
 }
+
