@@ -6,16 +6,16 @@ export default class Contact extends Component {
     return (
       <form className="contact">
         <fieldset>
-          <label htmlFor='name'>Name
-            <input type="text" id='name' name='name' />
+          <label htmlFor='name'>
+            <input type="text" className="name" placeholder="Name" id='name' name='name' />
           </label>
 
-          <label htmlFor='email'>Email
-            <input type="email" id='email' name='email' />
+          <label htmlFor='email'>
+            <input type="email" placeholder="Email" id='email' name='email' />
           </label>
 
-          <label htmlFor='message'>Message
-            <textarea id='message' name='message'/>
+          <label htmlFor='message'>
+            <textarea className="message" id='message' placeholder="Message" name='message'/>
           </label>
 
           <button type="submit">Send</button>
