@@ -1,5 +1,5 @@
 .contact {
-  /*background-color: gray;*/
+  background-color: #F0F0F0;
   display: flex;
   justify-content: flex-start;
 }
@@ -10,17 +10,18 @@
 }
 
 .contact-info-header {
-  line-height: 0;
+  margin: 0;
   font-family: 'Arvo', serif;
   font-size: 20px;
   font-weight: 700;
 }
 
 .contact-info > p {
+  margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 15%;
+  line-height: 1.5;
 }
 
 .contact-form {
@@ -34,7 +35,6 @@ fieldset {
   width: 30%;
   background-color: white;
   border: 1px solid gray;
-  border-radius: 5px;
 }
 
 label {
@@ -49,7 +49,6 @@ input {
   font-size: 18px;
   padding: 10px;
   border: 1px solid gray;
-  border-radius: 5px;
   width: 300px;
 }
 
@@ -61,7 +60,6 @@ input {
   height: 100px;
   width: 300px;
   border: 1px solid gray;
-  border-radius: 5px;
 }
 
 button {
