@@ -63,6 +63,14 @@ input {
 }
 
 button {
+  color: white;
   margin: 5px;
   padding: 10px;
+  background-color: #FF8A5B;
+  border: 0;
+}
+
+button:hover {
+  background-color: #FBD1A2;
+  color: #058ED9;
 }
