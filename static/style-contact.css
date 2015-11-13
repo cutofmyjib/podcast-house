@@ -1,10 +1,40 @@
 .contact {
-  display: block;
+  /*background-color: gray;*/
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact-info {
+  width: 30%;
+  padding: 20px;
+}
+
+.contact-info-header {
+  line-height: 0;
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contact-info > p {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  background: white;
-  box-shadow: 0 0 20px -5px rgba(153,153,153,0.9);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15%;
+}
+
+.contact-form {
+  padding: 20px;
+}
+
+
+fieldset {
+  font-family: 'Arvo', sans-serif;
+  padding: 10px;
+  width: 30%;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
 label {
@@ -14,21 +44,27 @@ label {
 }
 
 input {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
   padding: 10px;
   border: 1px solid gray;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 300px;
+}
+
+.message {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 10px;
+  height: 100px;
+  width: 300px;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
 button {
   margin: 5px;
   padding: 10px;
-}
-
-.message {
-  padding: 10px;
-  height: 100px;
-  width: 300px;
-  border: 1px solid gray;
-  border-radius: 10px;
 }
