@@ -1,10 +1,40 @@
 .contact {
-  display: block;
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact-info {
+  width: 30%;
+  padding: 20px;
+}
+
+.contact-info-header {
+  margin: 0;
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contact-info > p {
+  margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  background: white;
-  box-shadow: 0 0 20px -5px rgba(153,153,153,0.9);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contact-form {
+  padding: 20px;
+}
+
+
+fieldset {
+  font-family: 'Arvo', sans-serif;
+  padding: 10px;
+  width: 30%;
+  background-color: white;
+  border: 1px solid gray;
 }
 
 label {
@@ -14,21 +44,33 @@ label {
 }
 
 input {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
   padding: 10px;
   border: 1px solid gray;
-  border-radius: 10px;
   width: 300px;
 }
 
-button {
-  margin: 5px;
-  padding: 10px;
-}
-
 .message {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
   padding: 10px;
   height: 100px;
   width: 300px;
   border: 1px solid gray;
-  border-radius: 10px;
+}
+
+button {
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  background-color: #FF8A5B;
+  border: 0;
+}
+
+button:hover {
+  background-color: #FBD1A2;
+  color: #058ED9;
 }
