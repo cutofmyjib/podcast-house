@@ -3,6 +3,7 @@ import Router from 'react-router';
 import '../static/style.css';
 import '../static/style-playlist-article.css';
 import '../static/style-about.css';
+import '../static/style-audio.css';
 import '../static/style-contact.css';
 import '../static/twitter-icon.png';
 import '../static/facebook-icon.png';

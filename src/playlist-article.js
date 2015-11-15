@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
+import AudioTag from './audio';
 
 export default class PlaylistArticle extends Component {
   render() {
@@ -15,7 +17,7 @@ export default class PlaylistArticle extends Component {
               <h1 className="podlist-title">Featured Content Here</h1>
               <h4>1hr 40m</h4>
               <h4>7 talks</h4>
-              <div className="audio"><audio controls></audio></div>
+              <AudioTag src={"https://cloudup-files.s3.amazonaws.com/1355244692571.845b8dfc324b7bd3c548e8c06380908e"} />
             </div>
           </div>
         </div>
