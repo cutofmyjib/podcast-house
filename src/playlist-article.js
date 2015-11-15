@@ -15,7 +15,7 @@ export default class PlaylistArticle extends Component {
               <h1 className="podlist-title">Featured Content Here</h1>
               <h4>1hr 40m</h4>
               <h4>7 talks</h4>
-              <div className="audio"><audio controls></audio></div>
+              <div className="audio"><audio src="your-source-here"></audio></div>
             </div>
           </div>
         </div>
